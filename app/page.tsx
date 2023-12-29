@@ -23,7 +23,7 @@ export default function Home() {
           solutions.
         </p>
         <div className="flex items-center gap-4 pt-6 font-semibold">
-          <span>Find me on</span>
+          <span>More of me:</span>
           <span className="flex gap-5 text-[1.7rem]">
             {contactLinks.map((link) => (
               <Link

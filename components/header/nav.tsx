@@ -26,7 +26,7 @@ export function Nav() {
       <nav
         aria-label="Navigation menu"
         className={cn(
-          "absolute right-0 top-10 flex flex-col gap-6 rounded bg-highlight px-6 py-3 font-semibold text-foam opacity-90 sm:visible sm:left-32 sm:top-[2.25rem] sm:flex-row sm:bg-inherit sm:px-0 sm:py-1 sm:opacity-100 dark:text-pine",
+          "absolute right-0 top-10 flex flex-col gap-6 rounded bg-highlight px-6 py-3 font-semibold text-foam opacity-95 sm:visible sm:left-32 sm:top-[2.25rem] sm:flex-row sm:bg-inherit sm:px-0 sm:py-1 sm:opacity-100 dark:text-pine",
           { invisible: navIsHidden },
         )}
       >
@@ -40,7 +40,7 @@ export function Nav() {
           </Link>
         ))}
       </nav>
-      <div className="flex gap-4 pt-[0.2rem] text-xl sm:gap-6 sm:text-2xl">
+      <div className="flex gap-6 pt-[0.2rem] text-2xl">
         <button className="hover:text-rose dark:hover:text-love">
           <SearchIcon />
         </button>

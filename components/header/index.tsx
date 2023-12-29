@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Nav } from "./nav";
-import logo from "@/public/logo.svg";
+import laptopLogo from "@/public/laptop-logo.svg";
+import smartphoneLogo from "@/public/smartphone-logo.svg";
 
 export const Header = () => {
   return (
     <header className="relative flex w-full items-start justify-between">
       <div className="flex flex-row-reverse">
-        <Link href="/" className="peer h-fit">
-          <h1 className="font-sans text-xl font-semibold sm:text-[1.75rem]">
+        <Link href="/" className="peer absolute right-0 top-12 h-fit sm:static">
+          <h1 className="font-sans text-2xl font-semibold sm:text-[1.75rem]">
             Peter Jun Park
           </h1>
         </Link>
@@ -17,10 +18,16 @@ export const Header = () => {
           className="saturate-[.25] hover:filter-none peer-hover:filter-none"
         >
           <Image
-            src={logo}
-            alt="Peter Jun Park's personal logo"
+            src={laptopLogo}
+            alt="Isometric laptop logo"
             priority
-            className="w-14 sm:w-32"
+            className="hidden w-32 sm:block"
+          />
+          <Image
+            src={smartphoneLogo}
+            alt="Isometric smartphone logo"
+            priority
+            className="w-32 sm:hidden"
           />
         </Link>
       </div>

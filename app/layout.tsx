@@ -3,6 +3,7 @@ import { Overpass, Overpass_Mono } from "next/font/google";
 import "./globals.css";
 import { DarkModeProvider } from "@/components/dark-mode/provider";
 import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 const overpass = Overpass({
   subsets: ["latin"],
@@ -41,6 +42,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Footer />
         </DarkModeProvider>
       </body>
     </html>
