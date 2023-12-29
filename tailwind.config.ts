@@ -9,6 +9,8 @@ const config: Config = {
   darkMode: "class",
   theme: {
     colors: {
+      inherit: "inherit",
+      transparent: "transparent",
       base: "hsl(var(--base))",
       surface: "hsl(var(--surface))",
       overlay: "hsl(var(--overlay))",

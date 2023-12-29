@@ -22,29 +22,40 @@
   }
 
   .dark {
-    --base: 249, 22%, 12%;
-    --surface: 247, 23%, 15%;
-    --overlay: 248, 25%, 18%;
+    --base: 246, 24%, 17%;
+    --surface: 248, 24%, 20%;
+    --overlay: 248, 21%, 26%;
     --muted: 249, 12%, 47%;
     --subtle: 248, 15%, 61%;
     --text: 245, 50%, 91%;
     --love: 343, 76%, 68%;
     --gold: 35, 88%, 72%;
-    --rose: 2, 55%, 83%;
-    --pine: 197, 49%, 38%;
+    --rose: 2, 66%, 75%;
+    --pine: 197, 48%, 47%;
     --foam: 189, 43%, 73%;
     --iris: 267, 57%, 78%;
-    --highlight-lo: 244, 18%, 15%;
-    --highlight-md: 249, 15%, 28%;
-    --highlight-hi: 248, 13%, 36%;
+    --highlight-lo: 245, 22%, 20%;
+    --highlight-md: 247, 16%, 30%;
+    --highlight-hi: 249, 15%, 38%;
   }
 }
 
 @layer base {
   html {
-    @apply scroll-smooth border-subtle;
+    @apply border-subtle scroll-smooth;
   }
+
   body {
-    @apply bg-base text-text;
+    @apply bg-base text-text mx-auto flex min-h-screen max-w-3xl flex-col px-8 pt-12 font-mono antialiased;
+  }
+
+  .logo {
+    font-family: var(--font-nabla);
+    font-palette: logoPalette;
+  }
+
+  @font-palette-values --logoPalette {
+    font-family: var(--font-nabla);
+    base-palette: 3;
   }
 }
