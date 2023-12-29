@@ -8,7 +8,7 @@ export const Header = () => {
     <header className="relative flex w-full items-start justify-between">
       <div className="flex flex-row-reverse">
         <Link href="/" className="peer h-fit">
-          <h1 className="font-sans text-xl font-bold sm:text-2xl">
+          <h1 className="font-sans text-xl font-semibold sm:text-[1.75rem]">
             Peter Jun Park
           </h1>
         </Link>
