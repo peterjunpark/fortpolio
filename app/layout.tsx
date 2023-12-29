@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Overpass, Overpass_Mono } from "next/font/google";
 import "./globals.css";
+import { DarkModeProvider } from "@/components/dark-mode/provider";
 
 const overpass = Overpass({
   subsets: ["latin"],
@@ -25,11 +26,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${overpass.variable} ${overpassMono.variable} font-mono`}
-    >
-      <body>{children}</body>
+    <html lang="en" className={`${overpass.variable} ${overpassMono.variable}`}>
+      <body>
+        <DarkModeProvider
+          enableSystem
+          defaultTheme="system"
+          attribute="class"
+          disableTransitionOnChange
+        >
+          {children}
+        </DarkModeProvider>
+      </body>
     </html>
   );
 }
