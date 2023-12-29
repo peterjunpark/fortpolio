@@ -27,8 +27,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${overpass.variable} ${overpassMono.variable}`} suppressHydrationWarning>
-      <body className="flex min-h-screen flex-col font-mono">
+    <html
+      lang="en"
+      className={`${overpass.variable} ${overpassMono.variable}`}
+      suppressHydrationWarning
+    >
+      <body>
         <DarkModeProvider
           enableSystem
           defaultTheme="system"

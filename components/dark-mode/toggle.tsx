@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import { Sun, Moon } from "@phosphor-icons/react";
+import { PiSun as SunIcon, PiMoon as MoonIcon } from "react-icons/pi";
 
 type DarkModeToggleProps = {
   className?: string;
@@ -25,7 +25,11 @@ export const DarkModeToggle = ({ className }: DarkModeToggleProps) => {
         setTheme(theme === "dark" ? "light" : "dark");
       }}
     >
-      {theme === "dark" ? <Moon /> : <Sun />}
+      {theme === "dark" ? (
+        <MoonIcon className="-rotate-12 -scale-x-100" />
+      ) : (
+        <SunIcon />
+      )}
     </button>
   );
 };
