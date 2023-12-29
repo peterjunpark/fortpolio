@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { cn } from "@/utils";
 import { DarkModeToggle } from "../dark-mode/toggle";
+import { navLinks } from "@/site-config";
 import {
   PiMagnifyingGlass as SearchIcon,
   PiEquals as HamburgerIcon,
@@ -11,12 +12,6 @@ import {
 } from "react-icons/pi";
 
 export function Nav() {
-  const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Projects", href: "/projects" },
-    { name: "Blog", href: "/blog" },
-  ];
   const [navIsHidden, setNavIsHidden] = useState(true);
   const toggleNav = () => {
     setNavIsHidden(!navIsHidden);

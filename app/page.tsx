@@ -1,6 +1,6 @@
 import Link from "next/link";
-
 import { Section } from "@/components/section";
+import { githubLink, linkedinLink, email } from "@/site-config";
 import {
   IoLogoGithub as GitHubIcon,
   IoLogoLinkedin as LinkedInIcon,
@@ -9,9 +9,9 @@ import {
 
 export default function Home() {
   const contactLinks = [
-    { icon: <GitHubIcon />, href: "https://github.com/peterjunpark" },
-    { icon: <LinkedInIcon />, href: "https://linkedin.com/in/peterjunpark" },
-    { icon: <EmailIcon />, href: "mailto:park@hey.com" },
+    { icon: <GitHubIcon />, href: githubLink },
+    { icon: <LinkedInIcon />, href: linkedinLink },
+    { icon: <EmailIcon />, href: "mailto:" + email },
   ];
   return (
     <main className="flex flex-col">
@@ -28,6 +28,7 @@ export default function Home() {
             {contactLinks.map((link) => (
               <Link
                 href={link.href}
+                target="_blank"
                 key={link.href}
                 className="-my-5 hover:text-rose dark:hover:text-love"
               >
@@ -36,6 +37,21 @@ export default function Home() {
             ))}
           </span>
         </div>
+      </Section>
+      <Section heading="Recent posts">
+        <p>
+          Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
+          enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
+          exercitation amet. Nisi anim cupidatat excepteur officia.
+          Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
+          voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
+          officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+          commodo officia dolor Lorem duis laboris cupidatat officia voluptate.
+          Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis
+          officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis
+          sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
+          consectetur et est culpa et culpa duis.
+        </p>
       </Section>
       <Section heading="Recent posts">
         <p>

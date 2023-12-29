@@ -42,20 +42,10 @@
 
 @layer base {
   html {
-    @apply border-subtle scroll-smooth;
+    @apply scroll-smooth border-subtle;
   }
 
   body {
-    @apply bg-base text-text mx-auto flex min-h-screen max-w-3xl flex-col px-8 pt-12 font-mono antialiased;
-  }
-
-  .logo {
-    font-family: var(--font-nabla);
-    font-palette: logoPalette;
-  }
-
-  @font-palette-values --logoPalette {
-    font-family: var(--font-nabla);
-    base-palette: 3;
+    @apply mx-auto flex min-h-screen max-w-3xl flex-col bg-base px-8 pt-12 font-mono text-text antialiased;
   }
 }

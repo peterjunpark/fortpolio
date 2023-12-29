@@ -7,7 +7,7 @@ type SectionProps = {
 
 export function Section({ heading, children }: SectionProps) {
   return (
-    <section className="pt-16">
+    <section className="py-8">
       <h2 className="text-highlght-hi pb-1 text-xl font-semibold sm:text-[1.4rem]">
         {heading}
       </h2>
