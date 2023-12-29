@@ -2,26 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --base: 32, 57%, 95%;
+    --surface: 35, 100%, 98%;
+    --overlay: 33, 43%, 91%;
+    --muted: 257, 9%, 61%;
+    --subtle: 248, 12%, 52%;
+    --text: 248, 19%, 40%;
+    --love: 343, 35%, 55%;
+    --gold: 35, 81%, 56%;
+    --rose: 3, 53%, 67%;
+    --pine: 197, 53%, 34%;
+    --foam: 189, 30%, 48%;
+    --iris: 268, 21%, 57%;
+    --highlight-lo: 25, 35%, 93%;
+    --highlight-md: 10, 9%, 86%;
+    --highlight-hi: 315, 4%, 80%;
+  }
+
+  .dark {
+    --base: 249, 22%, 12%;
+    --surface: 247, 23%, 15%;
+    --overlay: 248, 25%, 18%;
+    --muted: 249, 12%, 47%;
+    --subtle: 248, 15%, 61%;
+    --text: 245, 50%, 91%;
+    --love: 343, 76%, 68%;
+    --gold: 35, 88%, 72%;
+    --rose: 2, 55%, 83%;
+    --pine: 197, 49%, 38%;
+    --foam: 189, 43%, 73%;
+    --iris: 267, 57%, 78%;
+    --highlight-lo: 244, 18%, 15%;
+    --highlight-md: 249, 15%, 28%;
+    --highlight-hi: 248, 13%, 36%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  html {
+    @apply scroll-smooth border-subtle;
+  }
+  body {
+    @apply bg-base text-text;
+  }
 }
