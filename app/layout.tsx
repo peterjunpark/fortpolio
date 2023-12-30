@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Overpass, Overpass_Mono } from "next/font/google";
 import "./globals.css";
@@ -44,6 +45,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </DarkModeProvider>
+        <Analytics />
       </body>
     </html>
   );
