@@ -12,6 +12,11 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {children}
       </h2>
     ),
+    h3: ({ children }) => (
+      <h3 className="pb-2 pl-2 pt-10 text-lg font-[550] tracking-tight sm:text-xl">
+        {children}
+      </h3>
+    ),
     p: ({ children }) => (
       <p className="py-3 font-[465] tracking-tight">{children}</p>
     ),

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Overpass, Overpass_Mono } from "next/font/google";
 import "./globals.css";
 import { DarkModeProvider } from "@/components/dark-mode/provider";
+import { TooltipProvider } from "@/components/tooltip";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
@@ -42,7 +43,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <main>{children}</main>
+          <TooltipProvider>
+            <main>{children}</main>
+          </TooltipProvider>
           <Footer />
         </DarkModeProvider>
         <Analytics />
