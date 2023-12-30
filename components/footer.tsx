@@ -1,28 +1,28 @@
 import Link from "next/link";
-import { navLinks, footerName, footerYear, repoLink } from "@/site-config";
+import { contactLinks, siteInfo } from "@/site-config";
 
 export function Footer() {
   return (
-    <footer className="mt-auto flex flex-col-reverse gap-2 pb-5 pt-7 text-sm text-subtle sm:flex-row sm:justify-between">
+    <footer className="mt-auto flex flex-col-reverse gap-2 pb-6 pt-12 text-sm text-subtle sm:flex-row sm:justify-between">
       <div className="text-center">
-        {footerYear} ©{" "}
+        {siteInfo.year} ©{" "}
         <Link
-          href={repoLink}
+          href={siteInfo.year}
           target="_blank"
           className="pointer-events-none sm:pointer-events-auto sm:hover:underline"
         >
-          {footerName}
+          {siteInfo.name}
         </Link>
       </div>
-      <nav className="divide-x divide-dashed text-center text-[0.81rem] text-subtle">
-        {navLinks.map((link) => (
+      <nav className="divide-x divide-dashed text-center font-medium text-subtle">
+        {contactLinks.map((link) => (
           <Link
             href={link.href}
             target="_blank"
             key={link.href}
             className="px-3 hover:underline sm:last:pr-0"
           >
-            {link.name}
+            {link.desc}
           </Link>
         ))}
       </nav>

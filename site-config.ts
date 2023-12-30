@@ -1,26 +1,28 @@
-const navLinks = [
+import { createElement } from "react";
+import {
+  IoLogoGithub as GitHubIcon,
+  IoLogoLinkedin as LinkedInIcon,
+  IoMailOpen as EmailIcon,
+} from "react-icons/io5";
+import { PiNotebookFill as CVIcon } from "react-icons/pi";
+
+// prettier-ignore
+export const contactLinks = [
+  { desc: "GitHub", href: "park@hey.com", icon: createElement(GitHubIcon) },
+  { desc: "LinkedIn", href: "https://linkedin.com/in/peterjunpark", icon: createElement(LinkedInIcon) },
+  { desc: "Email", href: "mailto:park@hey.com", icon: createElement(EmailIcon) },
+  { desc: "CV", href: "/Peter_Park_CV.pdf", icon: createElement(CVIcon) },
+] as const;
+
+export const navLinks = [
   { name: "Home", href: "/" },
   { name: "Bio", href: "/bio" },
   { name: "Projects", href: "/projects" },
   { name: "Posts", href: "/posts" },
-];
+] as const;
 
-const email = "park@hey.com";
-const githubLink = "https://github.com/peterjunpark";
-const linkedinLink = "https://linkedin.com/in/peterjunpark";
-const resumePath = "/Peter_Park_CV.pdf";
-
-const footerName = "peterjunpark";
-const footerYear = "2024";
-const repoLink = "https://github.com/peterjunpark/fortpolio";
-
-export {
-  navLinks,
-  email,
-  githubLink,
-  linkedinLink,
-  resumePath,
-  footerName,
-  footerYear,
-  repoLink,
-};
+export const siteInfo = {
+  repo: "https://github.com/peterjunpark/fortpolio",
+  name: "peterjunpark",
+  year: "2024",
+} as const;

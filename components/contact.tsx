@@ -1,12 +1,6 @@
 import Link from "next/link";
 import { Tooltip, TooltipTrigger, TooltipContent } from "./tooltip";
-import { githubLink, linkedinLink, email, resumePath } from "@/site-config";
-import {
-  IoLogoGithub as GitHubIcon,
-  IoLogoLinkedin as LinkedInIcon,
-  IoMailOpen as EmailIcon,
-} from "react-icons/io5";
-import { PiNotebookFill as PaperIcon } from "react-icons/pi";
+import { contactLinks } from "@/site-config";
 
 type ContactArrayProps = {
   hideGithub?: boolean;
@@ -21,15 +15,6 @@ export function ContactArray({
   hideEmail,
   hideResume,
 }: ContactArrayProps) {
-  // prettier-ignore
-  const contactLinks: ContactLinkProps[] = [
-    { icon: <GitHubIcon />, href: githubLink, desc: "GitHub" },
-    { icon: <LinkedInIcon />, href: linkedinLink, desc: "LinkedIn" },
-    { icon: <EmailIcon />, href: "mailto:" + email,
-      desc: <span>Email <span className="font-mono">park@hey.com</span></span> },
-    { icon: <PaperIcon />, href: resumePath, desc: "Résumé" },
-  ];
-
   return (
     <span className="flex justify-center gap-8 pt-8 text-[1.7rem]">
       {!hideGithub && <ContactLink {...contactLinks[0]} />}
