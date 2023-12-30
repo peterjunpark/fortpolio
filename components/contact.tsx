@@ -13,7 +13,7 @@ export function ContactArray() {
     { icon: <EmailIcon />, href: "mailto:" + email },
   ];
   return (
-    <div className="flex items-center gap-4 pt-6 font-semibold">
+    <div className="flex items-center gap-4 py-6 font-semibold">
       <span>More of me:</span>
       <span className="flex gap-5 text-[1.7rem]">
         {contactLinks.map((link) => (

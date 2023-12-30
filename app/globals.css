@@ -46,6 +46,6 @@
   }
 
   body {
-    @apply mx-auto flex min-h-screen max-w-3xl flex-col bg-base px-8 pt-12 font-mono text-text antialiased;
+    @apply mx-auto flex min-h-screen min-w-[350px] max-w-3xl flex-col bg-base px-8 pt-12 font-mono text-text antialiased;
   }
 }

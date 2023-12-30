@@ -10,7 +10,7 @@ export function Footer() {
   return (
     <footer className="mt-auto flex flex-col-reverse gap-2 pb-5 pt-7 text-sm text-subtle sm:flex-row sm:justify-between">
       <div className="text-center">
-        {footerYear}{" "}
+        {footerYear} ©{" "}
         <Link
           href={repoLink}
           target="_blank"
@@ -25,7 +25,7 @@ export function Footer() {
             href={link.href}
             target="_blank"
             key={link.href}
-            className="px-3 last:pr-0 hover:underline"
+            className="px-3 hover:underline sm:last:pr-0"
           >
             {link.name}
           </Link>

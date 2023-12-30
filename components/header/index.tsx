@@ -6,7 +6,7 @@ import smartphoneLogo from "@/public/smartphone-logo.svg";
 
 export const Header = () => {
   return (
-    <header className="relative flex w-full items-start justify-between sm:pb-7">
+    <header className="relative flex w-full items-start justify-between sm:pb-6">
       <div className="flex flex-row-reverse">
         <Link href="/" className="peer absolute right-0 top-12 h-fit sm:static">
           <span className="font-sans text-2xl font-semibold sm:text-[1.75rem]">
