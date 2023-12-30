@@ -8,7 +8,7 @@ const navLinks = [
 const email = "park@hey.com";
 const githubLink = "https://github.com/peterjunpark";
 const linkedinLink = "https://linkedin.com/in/peterjunpark";
-const resumePath = "/resume.pdf";
+const resumePath = "/Peter_Park_CV.pdf";
 
 const footerName = "peterjunpark";
 const footerYear = "2024";
