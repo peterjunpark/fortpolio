@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { cn } from "@/utils";
-import { DarkModeToggle } from "../dark-mode/toggle";
-import { navLinks } from "@/site-config";
+import { DarkModeToggle } from "@/components/dark-mode/toggle";
+import { navLinks } from "@/content/site-config";
 import {
   PiMagnifyingGlass as SearchIcon,
   PiEquals as HamburgerIcon,

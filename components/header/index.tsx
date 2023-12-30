@@ -9,9 +9,9 @@ export const Header = () => {
     <header className="relative flex w-full items-start justify-between">
       <div className="flex flex-row-reverse">
         <Link href="/" className="peer absolute right-0 top-12 h-fit sm:static">
-          <h1 className="font-sans text-2xl font-semibold sm:text-[1.75rem]">
+          <span className="font-sans text-2xl font-semibold sm:text-[1.75rem]">
             Peter Jun Park
-          </h1>
+          </span>
         </Link>
         <Link
           href="/"

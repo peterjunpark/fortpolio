@@ -1,44 +1,13 @@
-import Link from "next/link";
-import { Section } from "@/components/section";
-import { githubLink, linkedinLink, email } from "@/site-config";
-import {
-  IoLogoGithub as GitHubIcon,
-  IoLogoLinkedin as LinkedInIcon,
-  IoMailOpen as EmailIcon,
-} from "react-icons/io5";
+import { Spacer } from "@/components/spacer";
+import HelloWorld from "@/content/hello-world.mdx";
 
 export default function Home() {
-  const contactLinks = [
-    { icon: <GitHubIcon />, href: githubLink },
-    { icon: <LinkedInIcon />, href: linkedinLink },
-    { icon: <EmailIcon />, href: "mailto:" + email },
-  ];
   return (
     <main className="flex flex-col">
-      <Section heading="Hello world!">
-        <p>
-          I&apos;m a full stack developer with a background in technical
-          documentation. My commitment to clear communication and
-          problem-solving complements my passion for creating robust web
-          solutions.
-        </p>
-        <div className="flex items-center gap-4 pt-6 font-semibold">
-          <span>More of me:</span>
-          <span className="flex gap-5 text-[1.7rem]">
-            {contactLinks.map((link) => (
-              <Link
-                href={link.href}
-                target="_blank"
-                key={link.href}
-                className="-my-5 hover:text-rose dark:hover:text-love"
-              >
-                {link.icon}
-              </Link>
-            ))}
-          </span>
-        </div>
-      </Section>
-      <Section heading="Recent posts">
+      <Spacer element="section">
+        <HelloWorld />
+      </Spacer>
+      <Spacer element="section">
         <p>
           Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
           enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
@@ -52,8 +21,8 @@ export default function Home() {
           sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
           consectetur et est culpa et culpa duis.
         </p>
-      </Section>
-      <Section heading="Recent posts">
+      </Spacer>
+      <Spacer element="section">
         <p>
           Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
           enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
@@ -67,7 +36,7 @@ export default function Home() {
           sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
           consectetur et est culpa et culpa duis.
         </p>
-      </Section>
+      </Spacer>
     </main>
   );
 }
