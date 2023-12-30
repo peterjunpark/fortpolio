@@ -15,7 +15,7 @@ export const Header = () => {
         </Link>
         <Link
           href="/"
-          className="saturate-[.25] hover:filter-none peer-hover:filter-none"
+          className="select-none saturate-[.25] hover:filter-none peer-hover:filter-none"
         >
           <Image
             src={laptopLogo}

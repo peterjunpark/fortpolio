@@ -1,10 +1,5 @@
 import Link from "next/link";
-import {
-  navLinks,
-  footerName,
-  footerYear,
-  repoLink,
-} from "@/content/site-config";
+import { navLinks, footerName, footerYear, repoLink } from "@/site-config";
 
 export function Footer() {
   return (
@@ -19,7 +14,7 @@ export function Footer() {
           {footerName}
         </Link>
       </div>
-      <div className="divide-x divide-dashed text-center text-[0.81rem] text-subtle">
+      <nav className="divide-x divide-dashed text-center text-[0.81rem] text-subtle">
         {navLinks.map((link) => (
           <Link
             href={link.href}
@@ -30,7 +25,7 @@ export function Footer() {
             {link.name}
           </Link>
         ))}
-      </div>
+      </nav>
     </footer>
   );
 }

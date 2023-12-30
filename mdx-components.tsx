@@ -3,7 +3,7 @@ import type { MDXComponents } from "mdx/types";
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     h1: ({ children }) => (
-      <h1 className="pb-3 pt-6 text-2xl font-semibold sm:text-3xl">
+      <h1 className="pb-2 pt-6 text-2xl font-semibold sm:text-3xl">
         {children}
       </h1>
     ),
@@ -12,7 +12,9 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {children}
       </h2>
     ),
-    p: ({ children }) => <p className="py-2 tracking-tight">{children}</p>,
+    p: ({ children }) => (
+      <p className="py-3 font-[465] tracking-tight">{children}</p>
+    ),
     ...components,
   };
 }

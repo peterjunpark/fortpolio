@@ -42,7 +42,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          {children}
+          <main>{children}</main>
           <Footer />
         </DarkModeProvider>
         <Analytics />

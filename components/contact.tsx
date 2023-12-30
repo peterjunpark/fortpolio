@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { githubLink, linkedinLink, email } from "@/content/site-config";
+import { githubLink, linkedinLink, email } from "@/site-config";
 import {
   IoLogoGithub as GitHubIcon,
   IoLogoLinkedin as LinkedInIcon,
@@ -13,20 +13,17 @@ export function ContactArray() {
     { icon: <EmailIcon />, href: "mailto:" + email },
   ];
   return (
-    <div className="flex items-center gap-4 py-6 font-semibold">
-      <span>More of me:</span>
-      <span className="flex gap-5 text-[1.7rem]">
-        {contactLinks.map((link) => (
-          <Link
-            href={link.href}
-            target="_blank"
-            key={link.href}
-            className="-my-5 hover:text-rose dark:hover:text-love"
-          >
-            {link.icon}
-          </Link>
-        ))}
-      </span>
-    </div>
+    <span className="flex justify-center gap-8 pt-8 text-[1.7rem]">
+      {contactLinks.map((link) => (
+        <Link
+          href={link.href}
+          target="_blank"
+          key={link.href}
+          className="-my-5 hover:text-rose dark:hover:text-love"
+        >
+          {link.icon}
+        </Link>
+      ))}
+    </span>
   );
 }
