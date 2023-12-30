@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { cn } from "@/utils";
+import { cn } from "@/lib/utils";
 import { DarkModeToggle } from "@/components/dark-mode/toggle";
 import { navLinks } from "@/site-config";
 import {

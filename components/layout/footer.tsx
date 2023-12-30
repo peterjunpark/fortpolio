@@ -7,7 +7,7 @@ export function Footer() {
       <span className="text-center">
         {siteInfo.year} ©{" "}
         <Link
-          href={siteInfo.year}
+          href={siteInfo.repo}
           target="_blank"
           className="pointer-events-none sm:pointer-events-auto sm:hover:underline"
         >
