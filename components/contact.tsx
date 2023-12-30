@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Tooltip, TooltipTrigger, TooltipContent } from "./tooltip";
+import { Tooltip, TooltipTrigger, TooltipContent } from "./ui/tooltip";
 import { contactLinks } from "@/site-config";
 
 export function ContactArray() {

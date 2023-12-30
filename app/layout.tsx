@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Overpass, Overpass_Mono } from "next/font/google";
 import "./globals.css";
 import { DarkModeProvider } from "@/components/dark-mode/provider";
-import { TooltipProvider } from "@/components/tooltip";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
