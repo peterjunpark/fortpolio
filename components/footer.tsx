@@ -8,7 +8,7 @@ import {
 
 export function Footer() {
   return (
-    <footer className="mt-auto flex flex-col-reverse gap-2 py-9 text-sm text-subtle sm:flex-row sm:justify-between">
+    <footer className="mt-auto flex flex-col-reverse gap-2 pb-5 pt-7 text-sm text-subtle sm:flex-row sm:justify-between">
       <div className="text-center">
         {footerYear}{" "}
         <Link
