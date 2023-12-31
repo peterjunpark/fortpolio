@@ -1,4 +1,5 @@
 import type { MDXComponents } from "mdx/types";
+import Link, { LinkProps } from "next/link";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -18,7 +19,15 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </h3>
     ),
     p: ({ children }) => (
-      <p className="py-3 font-[465] tracking-tight">{children}</p>
+      <p className="py-3 font-[465] leading-relaxed tracking-tight">
+        {children}
+      </p>
+    ),
+    a: (props) => (
+      <Link
+        className="underline decoration-1 underline-offset-[3px] hover:decoration-rose hover:decoration-2 dark:hover:decoration-love"
+        {...(props as LinkProps)}
+      />
     ),
     ...components,
   };

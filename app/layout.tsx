@@ -1,22 +1,22 @@
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
-import { Overpass, Overpass_Mono } from "next/font/google";
+import { Roboto_Flex, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import { DarkModeProvider } from "@/components/dark-mode/provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 
-const overpass = Overpass({
+const robotoFlex = Roboto_Flex({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-overpass",
+  variable: "--font-roboto-flex",
 });
 
-const overpassMono = Overpass_Mono({
+const robotoMono = Roboto_Mono({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-overpass-mono",
+  variable: "--font-roboto-mono",
 });
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${overpass.variable} ${overpassMono.variable}`}
+      className={`${robotoFlex.variable} ${robotoMono.variable}`}
       suppressHydrationWarning
     >
       <body>

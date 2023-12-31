@@ -31,8 +31,8 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-overpass)"],
-        mono: ["var(--font-overpass-mono)"],
+        sans: ["var(--font-roboto-flex)"],
+        mono: ["var(--font-roboto-mono)"],
       },
     },
   },
