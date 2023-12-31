@@ -1,4 +1,5 @@
 import createMDX from "@next/mdx";
+import emoji from "remark-emoji";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -16,7 +17,9 @@ const nextConfig = {
 };
 
 const withMDX = createMDX({
-  options: {},
+  options: {
+    remarkPlugins: [emoji],
+  },
 });
 
 export default withMDX(nextConfig);
