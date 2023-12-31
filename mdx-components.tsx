@@ -19,7 +19,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </h3>
     ),
     p: ({ children }) => (
-      <p className="py-3 font-[465] leading-relaxed tracking-tight">
+      <p className="py-3 font-[420] leading-relaxed tracking-tight">
         {children}
       </p>
     ),

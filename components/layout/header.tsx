@@ -12,7 +12,7 @@ export const Header = () => {
           href="/"
           className="peer absolute right-0 top-12 h-fit pl-[0.95rem] sm:static"
         >
-          <span className="text-2xl font-semibold tracking-tighter sm:text-[1.75rem]">
+          <span className="text-[1.33rem] font-semibold -tracking-[0.1rem] sm:text-[1.75rem] sm:tracking-normal">
             Peter Jun Park
           </span>
         </Link>
