@@ -1,5 +1,7 @@
 import createMDX from "@next/mdx";
-import emoji from "remark-emoji";
+import frontmatter from "remark-frontmatter";
+import emoji from "remark-emoji"; // support for emoji shortcodes
+import gfm from "remark-gfm"; // support for github-flavoured markdown
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -18,7 +20,7 @@ const nextConfig = {
 
 const withMDX = createMDX({
   options: {
-    remarkPlugins: [emoji],
+    remarkPlugins: [frontmatter, emoji, gfm],
   },
 });
 
