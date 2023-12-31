@@ -29,3 +29,20 @@ export const contactLinks = [
   { desc: "Email", href: "mailto:" + siteInfo.email, icon: createElement(EmailIcon) },
   { desc: "CV", href: siteInfo.cvPath, icon: createElement(CVIcon) },
 ] as const;
+
+export const githubStatsCardColors = {
+  light: {
+    bg: "f4ede8",
+    title: "ea9d34",
+    text: "575279",
+    border: "ddfad9",
+    icon: "9893a5",
+  },
+  dark: {
+    bg: "2a283e",
+    title: "c4a7e7",
+    text: "e0def4",
+    border: "44415a",
+    icon: "6e6a86",
+  },
+} as const;
