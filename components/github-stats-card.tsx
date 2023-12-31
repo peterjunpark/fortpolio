@@ -25,8 +25,8 @@ export function GithubStatsCard({ variant, repo }: GithubStatsCardProps) {
 
   let href = `https://github.com/${username}/`;
   let src = `?username=${username}&hide=stars&rank_icon=github&custom_title=${username}`;
-  let alt = "";
-  let width = 400;
+  let alt = `GitHub stats for ${username}`;
+  let width = 420;
 
   switch (true) {
     case variant === "lang":
@@ -38,10 +38,8 @@ export function GithubStatsCard({ variant, repo }: GithubStatsCardProps) {
       href += repo;
       src = `/pin?username=${username}&repo=${repo}`;
       alt = "GitHub stats for ${username}'s ${repo} repository";
+      width = 400;
       break;
-    default:
-      alt = `GitHub stats for ${username}`;
-      width = 420;
   }
 
   return (
@@ -52,6 +50,8 @@ export function GithubStatsCard({ variant, repo }: GithubStatsCardProps) {
         alt={alt}
         width={width}
         height={0}
+        placeholder="blur"
+        blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNMqQcAAU0A5aSPMbMAAAAASUVORK5CYII="
       />
     </Link>
   );
