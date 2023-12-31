@@ -6,13 +6,14 @@ import {
 } from "react-icons/io5";
 import { PiNotebookFill as CVIcon } from "react-icons/pi";
 
-// prettier-ignore
-export const contactLinks = [
-  { desc: "GitHub", href: "https://github.com/peterjunpark", icon: createElement(GitHubIcon) },
-  { desc: "LinkedIn", href: "https://linkedin.com/in/peterjunpark", icon: createElement(LinkedInIcon) },
-  { desc: "Email", href: "mailto:park@hey.com", icon: createElement(EmailIcon) },
-  { desc: "CV", href: "/Peter_Park_CV.pdf", icon: createElement(CVIcon) },
-] as const;
+export const siteInfo = {
+  githubUsername: "peterjunpark",
+  linkedinUsername: "peterjunpark",
+  email: "park@hey.com",
+  cvPath: "/Peter_Park_CV.pdf",
+  repo: "https://github.com/peterjunpark/fortpolio",
+  year: "2024",
+} as const;
 
 export const navLinks = [
   { name: "Home", href: "/" },
@@ -21,8 +22,10 @@ export const navLinks = [
   // { name: "Posts", href: "/posts" },
 ] as const;
 
-export const siteInfo = {
-  repo: "https://github.com/peterjunpark/fortpolio",
-  name: "peterjunpark",
-  year: "2024",
-} as const;
+// prettier-ignore
+export const contactLinks = [
+  { desc: "GitHub", href: "https://github.com/" + siteInfo.githubUsername, icon: createElement(GitHubIcon) },
+  { desc: "LinkedIn", href: "https://linkedin.com/in/" + siteInfo.linkedinUsername, icon: createElement(LinkedInIcon) },
+  { desc: "Email", href: "mailto:" + siteInfo.email, icon: createElement(EmailIcon) },
+  { desc: "CV", href: siteInfo.cvPath, icon: createElement(CVIcon) },
+] as const;

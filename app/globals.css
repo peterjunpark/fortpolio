@@ -42,7 +42,7 @@
 
 @layer base {
   html {
-    @apply scroll-smooth border-subtle;
+    @apply scroll-smooth;
   }
 
   body {

@@ -11,7 +11,7 @@ export function Footer() {
           target="_blank"
           className="pointer-events-none sm:pointer-events-auto sm:hover:underline"
         >
-          {siteInfo.name}
+          {siteInfo.githubUsername}
         </Link>
       </span>
       <span className="divide-x divide-dashed text-center font-medium text-subtle">

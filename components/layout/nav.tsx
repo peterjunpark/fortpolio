@@ -21,7 +21,7 @@ export function Nav() {
       <nav
         aria-label="Navigation menu"
         className={cn(
-          "absolute right-0 top-10 flex flex-col gap-6 rounded bg-highlight px-6 py-3 font-semibold text-foam opacity-95 sm:visible sm:left-32 sm:top-[2.25rem] sm:flex-row sm:gap-10 sm:bg-inherit sm:px-0 sm:py-1 sm:opacity-100 dark:text-pine",
+          "absolute right-0 top-10 flex flex-col gap-6 rounded border border-highlight bg-overlay px-6 py-3 font-semibold text-foam sm:visible sm:left-36 sm:top-[2.25rem] sm:flex-row sm:gap-10 sm:border-none sm:bg-inherit sm:px-0 sm:py-1 dark:text-pine",
           { invisible: navIsHidden },
         )}
       >
