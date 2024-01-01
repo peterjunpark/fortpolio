@@ -46,7 +46,7 @@
   }
 
   body {
-    @apply mx-auto flex min-h-screen min-w-[350px] max-w-3xl flex-col bg-base px-8 pt-12 font-mono text-text antialiased selection:bg-gold selection:text-surface dark:selection:bg-iris;
+    @apply mx-auto flex min-h-screen min-w-[350px] max-w-[773px] flex-col bg-base px-8 pt-12 font-mono text-text antialiased selection:bg-gold selection:text-surface dark:selection:bg-iris;
   }
 
   /* syntax highlighting */
@@ -69,8 +69,6 @@
   code > [data-line]::before {
     counter-increment: line;
     content: counter(line);
-
-    /* Other styling */
     display: inline-block;
     width: 1rem;
     margin-right: 2rem;
