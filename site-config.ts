@@ -6,7 +6,7 @@ import {
 } from "react-icons/io5";
 import { PiNotebookFill as CVIcon } from "react-icons/pi";
 
-export const siteInfo = {
+const siteInfo = {
   githubUsername: "peterjunpark",
   linkedinUsername: "peterjunpark",
   email: "park@hey.com",
@@ -15,7 +15,7 @@ export const siteInfo = {
   year: "2024",
 } as const;
 
-export const navLinks = [
+const navLinks = [
   { name: "Home", href: "/" },
   { name: "Bio", href: "/bio" },
   { name: "Projects", href: "/projects" },
@@ -23,14 +23,14 @@ export const navLinks = [
 ] as const;
 
 // prettier-ignore
-export const contactLinks = [
+const contactLinks = [
   { desc: "GitHub", href: "https://github.com/" + siteInfo.githubUsername, icon: createElement(GitHubIcon) },
   { desc: "LinkedIn", href: "https://linkedin.com/in/" + siteInfo.linkedinUsername, icon: createElement(LinkedInIcon) },
   { desc: "Email", href: "mailto:" + siteInfo.email, icon: createElement(EmailIcon) },
   { desc: "CV", href: siteInfo.cvPath, icon: createElement(CVIcon) },
 ] as const;
 
-export const githubStatsCardColors = {
+const githubStatsCardColors = {
   light: {
     bg: "f4ede8",
     title: "ea9d34",
@@ -44,3 +44,5 @@ export const githubStatsCardColors = {
     icon: "6e6a86",
   },
 } as const;
+
+export { siteInfo, navLinks, contactLinks, githubStatsCardColors };

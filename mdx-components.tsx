@@ -30,7 +30,10 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       />
     ),
     code: (props) => (
-      <code className="rounded-md bg-highlight-lo px-8 py-6" {...props} />
+      <code
+        className="m-2 overflow-auto rounded-md bg-highlight-lo py-2 pr-3 text-[0.92rem] font-[475]"
+        {...props}
+      />
     ),
     ...components,
   };
