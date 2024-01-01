@@ -2,30 +2,39 @@ import { GithubStatsCard } from "@/components/github-stats-card";
 
 # Projects
 
-Some projects I've been working on recently — to improve my skills, experiment with unfamiliar technologies, or just for fun.
+Some projects I've been working on recently — to improve my skills, get comfortable with unfamiliar technologies, or just for fun.
 
 ## [Crosswordfish](https://crosswordfish.vercel.app)
 
 As a crossword enjoyer, I'm peeved by the fact that there are no good websites to play crossword puzzles.
 The ones out there today are either infested with ads, cost a subscription fee, or have less-than-stellar UX.
 
-Enter Crosswordfish: a crossword puzzle generator powered by OpenAI's GPT-3.5.
-The crossword grid and clues fill the screen, the grid is keyboard navigable, and I think it pretty easy on the eyes (thanks [shadcn/ui](https://ui.shadcn.com)).
+Enter Crosswordfish: a crossword puzzle generator powered by OpenAI's GPT-3.5. While it's just an MVP at this point,
+the crossword grid and clues fill the viewport, the grid is keyboard navigable, and I think it's pretty easy on the eyes (thanks [shadcn/ui](https://ui.shadcn.com)).
 
 <GithubStatsCard variant="repo" repo="crosswordfish" />
 
-In working on this project, I learned a lot about the intricacies of top-down state management through [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction).
+In working on this project, I focused on the ins and outs of top-down client-side state management through [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction).
 
 ## [Y (Twytter)](https://twytter-1.vercel.app)
 
-A Twitter clone. Not the most original project. I built Y in an effort to get comfortable with Next.js as a _full stack_ framework
-using its controversial new features at the time: the App Router and its ~~experimental~~ Server Actions.
+A Twitter clone; not the most original project. I built Y in an effort to improve my understanding of [Next.js](https://nextjs.org) as a _full stack_ framework
+using its controversial new features at the time: the App Router and Server Actions.
 
 <GithubStatsCard variant="repo" repo="y" />
 
-My main learning outcomes in building this were Prisma ORM, handling database migrations via Prisma, basic PostgresQL, and Auth.js for authentication.
+My main learning outcomes in building Y were [Prisma ORM](https://www.prisma.io/), PostgreSQL, [Auth.js](https://authjs.dev/) for authentication, and modern page rendering in Next.js (SSG, SSR, and CSR).
 
-## Sorting Algorithm Visualizer
+```ts title="testicles"
+type hello = {
+  name: string;
+  age: number;
+}
+
+const herro: hello = {name: "peter", age: 28}
+```
+
+## [Sorting Algorithm Visualizer](https://algorithm-visualizer-flame.vercel.app/)
 
 A sorting algorithm visualizer to demonstrate common sorting algorithms.
 

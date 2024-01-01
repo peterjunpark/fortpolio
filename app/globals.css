@@ -48,4 +48,17 @@
   body {
     @apply mx-auto flex min-h-screen min-w-[350px] max-w-3xl flex-col bg-base px-8 pt-12 font-mono text-text antialiased selection:bg-gold selection:text-surface dark:selection:bg-iris;
   }
+
+  /* syntax highlighting */
+  code[data-theme*=" "],
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  .dark {
+    code[data-theme*=" "],
+    code[data-theme*=" "] span {
+      color: var(--shiki-dark);
+    }
+  }
 }

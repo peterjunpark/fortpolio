@@ -1,7 +1,24 @@
 import createMDX from "@next/mdx";
-import frontmatter from "remark-frontmatter";
-import emoji from "remark-emoji"; // support for emoji shortcodes
-import gfm from "remark-gfm"; // support for github-flavoured markdown
+import remarkFrontmatter from "remark-frontmatter";
+import remarkEmoji from "remark-emoji"; // support for emoji shortcodes
+import remarkGfm from "remark-gfm"; // support for github-flavoured markdown
+import rehypePrettyCode from "rehype-pretty-code"; // syntax highlighting
+
+/** @type {import('rehype-pretty-code').Options} */
+const prettyCodeOptions = {
+  theme: {
+    light: "rose-pine-dawn",
+    dark: "rose-pine-moon",
+  },
+};
+
+const withMDX = createMDX({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [remarkFrontmatter, remarkEmoji, remarkGfm],
+    rehypePlugins: [[rehypePrettyCode, prettyCodeOptions]],
+  },
+});
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -17,11 +34,5 @@ const nextConfig = {
     ],
   },
 };
-
-const withMDX = createMDX({
-  options: {
-    remarkPlugins: [frontmatter, emoji, gfm],
-  },
-});
 
 export default withMDX(nextConfig);
