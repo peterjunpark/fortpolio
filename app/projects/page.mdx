@@ -2,50 +2,50 @@ import { GithubStatsCard } from "@/components/github-stats-card";
 
 # Projects
 
-Some projects I've been working on recently — to improve my skills, get comfortable with unfamiliar technologies, or just for fun.
+Stuff I've been working on recently — to improve my skills, get comfortable with unfamiliar technologies, or just for fun.
 
 ## [Crosswordfish](https://crosswordfish.vercel.app)
 
-As a crossword enjoyer, I'm peeved by the fact that there are no good websites to play crossword puzzles.
+As a crossword enjoyer, I'm was peeved by the fact that there were no good websites where I could play crossword puzzles.
 The ones out there today are either infested with ads, cost a subscription fee, or have less-than-stellar UX.
 
 Enter Crosswordfish: a crossword puzzle generator powered by OpenAI's GPT-3.5. While it's just an MVP at this point,
-the crossword grid and clues fill the viewport, the grid is keyboard navigable, and I think it's pretty easy on the eyes (thanks [shadcn/ui](https://ui.shadcn.com)).
+the crossword grid and clues fill the viewport, the grid is keyboard navigable, and I think it's pretty easy on the eyes
+(thanks [shadcn/ui](https://ui.shadcn.com)).
 
 <GithubStatsCard variant="repo" repo="crosswordfish" />
 
-In working on this project, I focused on the ins and outs of top-down client-side state management through [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction).
+Lots to improve on, namely, performance, diversity of generated grid layouts, error handling, support for more complicated clues
+and grid, responsive design on mobile, etc.
 
 ## [Y (Twytter)](https://twytter-1.vercel.app)
 
-A Twitter clone; not the most original project. I built Y in an effort to improve my understanding of [Next.js](https://nextjs.org) as a _full stack_ framework
-using its controversial new features at the time: the App Router and Server Actions.
+A Twitter clone; not the most original project. I built Y in an effort to improve my understanding of [Next.js](https://nextjs.org)
+as a _full stack_ framework using its newest and most hyped feature at the time: Server Actions.
 
 <GithubStatsCard variant="repo" repo="y" />
 
-My main learning outcomes in building Y were [Prisma ORM](https://www.prisma.io/), PostgreSQL, [Auth.js](https://authjs.dev/) for authentication, and modern page rendering in Next.js (SSG, SSR, and CSR).
-
-```ts showLineNumbers{5}
-type hello = {
-  name: string;
-  age: number;
-}
-
-const thisIsAVeryVeryVeryVerySuperDuperLongLineFunctionfdskla;jfads = function() {
-    return "hello world"
-  }
-
-const herro: hello = {name: "peter", age: 28}
-```
+My main learning outcomes in building Y were [Prisma ORM](https://www.prisma.io), PostgreSQL, [Auth.js](https://authjs.dev)
+for OAuth, and modern page rendering in Next.js (SSG, SSR, and CSR).
 
 ## [Sorting Algorithm Visualizer](https://algorithm-visualizer-flame.vercel.app/)
 
-A sorting algorithm visualizer to demonstrate common sorting algorithms.
+A sorting algorithm visualizer to demonstrate common sorting algorithm patterns. It helps you internalize a mental picture what these
+algorithms actually do; if you can visualize it, you can code it.
+
 
 <GithubStatsCard variant="repo" repo="algorithm-visualizer" />
 
+I built this project in Next.js (for some reason) using the App Router even though almost the entire app is rendered on the client-side anyway.
+
 ## ShelterSeek
 
-My team and I built this as our capstone project at our coding bootcamp.
+A platform for animal shelters to connect with potential adopters.
 
 <GithubStatsCard variant="repo" repo="ElisaMarchete/ShelterSeek" />
+
+My team and I built this as our capstone project at our coding bootcamp.
+Under the hood, it is a basic CRUD application powered by the [MERN](https://arc.net/split/76D86CAC-3A6C-40CD-A87B-423C0F791D77)
+stack featuring user authentication via JWTs, payment processing via [Stripe](https://stripe.com), image uploads, and a functional user interface
+relying on [Material-UI](https://mui.com/material-ui/) components.
+
