@@ -3,7 +3,7 @@ import { navLinks, contactLinks, siteInfo } from "@/site-config";
 
 export function Footer() {
   return (
-    <footer className="flex flex-col">
+    <footer className="mt-auto flex flex-col">
       <div className="flex flex-col-reverse pt-12 text-xs text-subtle sm:flex-row sm:justify-between">
         <span className="hidden divide-x divide-dashed text-center sm:block">
           {contactLinks.map((link) => (

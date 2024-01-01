@@ -17,12 +17,10 @@ export function GithubStatsCard({ variant, repo }: GithubStatsCardProps) {
   const bgColor = theme === "dark" ? colors.dark.bg : colors.light.bg;
   const titleColor = theme === "dark" ? colors.dark.title : colors.light.title;
   const textColor = theme === "dark" ? colors.dark.text : colors.light.text;
-  const borderColor =
-    theme === "dark" ? colors.dark.border : colors.light.border;
   const iconColor = theme === "dark" ? colors.dark.icon : colors.light.icon;
 
   const imageLoader = ({ src }: { src: string }) => {
-    return `https://github-readme-stats.vercel.app/api${src}&bg_color=${bgColor}&title_color=${titleColor}&text_color=${textColor}&border_color=${borderColor}&icon_color=${iconColor}&show_icons=true`;
+    return `https://github-readme-stats.vercel.app/api${src}&bg_color=${bgColor}&title_color=${titleColor}&text_color=${textColor}&icon_color=${iconColor}&show_icons=true&hide_border=true`;
   };
 
   let username = siteInfo.githubUsername as string;

@@ -29,6 +29,9 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {...(props as LinkProps)}
       />
     ),
+    code: (props) => (
+      <code className="rounded-md bg-highlight-lo px-8 py-6" {...props} />
+    ),
     ...components,
   };
 }

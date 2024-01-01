@@ -20,8 +20,8 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Peter Jun Park",
-  description: "Full Stack Developer Portfolio",
+  title: "Peter Jun Park | Full Stack",
+  description: "Peter's Full Stack Developer Blog / Portfolio",
 };
 
 export default function RootLayout({
