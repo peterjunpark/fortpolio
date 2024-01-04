@@ -1,6 +1,5 @@
 import type { MDXComponents } from "mdx/types";
 import Link, { LinkProps } from "next/link";
-import Image, { ImageProps } from "next/image";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -20,9 +19,15 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </h3>
     ),
     p: ({ children }) => (
-      <p className="hyphens-manual py-3 font-[420] leading-relaxed tracking-tight">
+      <p className="hyphens-manual py-3 font-[420] leading-relaxed tracking-tighter">
         {children}
       </p>
+    ),
+    ul: ({ children }) => (
+      <ul className="list-disc pl-6 pr-2 text-[0.95rem]">{children}</ul>
+    ),
+    ol: ({ children }) => (
+      <ol className="list-decimal pl-6 pr-2 text-[0.95rem]">{children}</ol>
     ),
     a: (props) => (
       <Link

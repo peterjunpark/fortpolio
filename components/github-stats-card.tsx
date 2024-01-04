@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
-import { siteInfo, githubStatsCardColors as colors } from "@/site-config";
+import { siteInfo, githubStatsCardColors as colors } from "@/site.config";
 
 type GithubStatsCardProps =
   | { variant?: "profile" | "lang"; repo?: string }
@@ -42,7 +42,7 @@ export function GithubStatsCard({ variant, repo }: GithubStatsCardProps) {
       widthClass = "w-[26rem]";
       break;
     case variant === "lang":
-      src = `/top-langs?username=${username}&hide_progress=true&hide=c%2B%2B,cmake&langs_count=8`;
+      src = `/top-langs?username=${username}&hide_progress=true&hide=c%2B%2B,cmake,handlebars&langs_count=8`;
       alt = `GitHub language stats for ${username}`;
       widthClass = "w-[21rem]";
     default:

@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { Tooltip, TooltipTrigger, TooltipContent } from "./ui/tooltip";
-import { contactLinks } from "@/site-config";
+import { contactLinks } from "@/site.config";
 
 export function ContactArray() {
   return (
-    <span className="flex justify-center gap-8 pt-8 text-[1.7rem]">
+    <span className="flex justify-center gap-8 pb-3 pt-8 text-[1.7rem]">
       {contactLinks.map((link) => (
         <Tooltip key={link.desc}>
           <TooltipTrigger asChild>

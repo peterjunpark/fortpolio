@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navLinks, contactLinks, siteInfo } from "@/site-config";
+import { navLinks, contactLinks, siteInfo } from "@/site.config";
 
 export function Footer() {
   return (

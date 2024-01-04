@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { DarkModeToggle } from "@/components/dark-mode/toggle";
-import { navLinks } from "@/site-config";
+import { navLinks } from "@/site.config";
 import {
   PiMagnifyingGlass as SearchIcon,
   PiEquals as HamburgerIcon,
