@@ -4,7 +4,7 @@ import { contactLinks } from "@/site.config";
 
 export function ContactArray() {
   return (
-    <span className="flex justify-center gap-8 pb-3 pt-8 text-[1.7rem]">
+    <span className="flex justify-center gap-8 py-12 text-[1.7rem]">
       {contactLinks.map((link) => (
         <Tooltip key={link.desc}>
           <TooltipTrigger asChild>
