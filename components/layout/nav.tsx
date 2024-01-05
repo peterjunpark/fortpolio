@@ -36,9 +36,9 @@ export function Nav() {
         ))}
       </nav>
       <div className="flex gap-6 pt-[0.2rem] text-2xl">
-        <button className="hover:text-rose dark:hover:text-love">
-          <SearchIcon />
-        </button>
+        {/* <button className="hover:text-rose dark:hover:text-love"> */}
+        {/*   <SearchIcon /> */}
+        {/* </button> */}
         <DarkModeToggle className="hover:text-rose dark:hover:text-love" />
         <button
           onClick={toggleNav}
