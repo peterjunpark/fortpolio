@@ -10,9 +10,9 @@ const gluten = Gluten({
 
 export function PhotoCard({ children }: { children?: React.ReactNode }) {
   return (
-    <section className="flex flex-col pt-8 sm:flex-row sm:justify-between">
-      <div>{children}</div>
-      <figure className="float-right m-[0.67rem] flex w-fit rotate-3 flex-col rounded bg-highlight px-2 pt-2 hover:rotate-1 sm:ml-6">
+    <section className="flex flex-col items-center pt-8 sm:flex-row sm:items-start sm:justify-between">
+      <div className="w-full sm:w-2/3">{children}</div>
+      <figure className="float-right m-[0.67rem] mt-10 flex w-fit rotate-3 flex-col rounded bg-highlight px-2 pt-2 hover:rotate-1 sm:ml-6 sm:mt-0">
         <Image
           src={me}
           alt="Peter Jun Park"
