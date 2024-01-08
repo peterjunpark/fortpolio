@@ -22,7 +22,7 @@ const renderSkill = (skill: Skill) => {
 
 export function SkillsArray({ skills }: SkillsProps) {
   return (
-    <ul className="flex flex-wrap justify-center gap-2">
+    <ul className="my-6 flex flex-wrap justify-center gap-2">
       {skills.map((skill) => renderSkill(skill))}
     </ul>
   );

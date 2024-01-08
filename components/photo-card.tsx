@@ -21,7 +21,7 @@ export function PhotoCard({ children }: { children?: React.ReactNode }) {
         <figcaption
           className={cn(
             gluten.className,
-            "ml-auto -rotate-2 pb-1 pr-3 text-2xl tracking-wider text-gold dark:text-iris",
+            "ml-auto -rotate-2 pb-1 pr-3 text-2xl tracking-wider text-iris",
           )}
         >
           peter
